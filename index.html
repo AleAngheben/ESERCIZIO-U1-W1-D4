@@ -98,24 +98,27 @@
             <td>80%</td>
             <td>51%</td>
           </tr>
+        </tbody>
+
+        <tfoot>
           <tr>
             <td>2012</td>
             <td>100%</td>
             <td>76%</td>
           </tr>
-        </tbody>
+        </tfoot>
       </table>
-      <p>
+      <article>
         Un test di validazione potrà essere fatto tramire
-        <a href="https://www.cssportal.com/css-validator/"
-          >un tool di validazione online.</a
-        >
+        <a href="https://www.cssportal.com/css-validator/">un tool online.</a>
         <br />
         Una volta ottimizzato il tutto, avremo raggiunto il nostro obiettivo ed
         essere stati dei veri developers come loro:
-      </p>
+      </article>
+
       <br />
       <br />
+
       <iframe
         src="https://www.youtube.com/embed/rfgOb5kV8AE"
         title="CMO di una STARTUP: Come si gestisce il Marketing? 🤌"
@@ -125,45 +128,55 @@
       ></iframe>
     </main>
     <form>
-      <fieldset>
-        <h3>
-          Vuoi rimanere aggiornato su atre novità del blog? <br />Iscriviti alla
-          nostra newsletter
-        </h3>
-
-        <legend>Newsletter</legend>
-        <label for="email">Inserisci l'email</label>
-        <input
-          type="email"
-          name="email"
-          id="email"
-          placeholder="mariorossi@epicode.com"
-        />
-        <label for="button"></label>
-        <button type="submit">Iscriviti!</button>
-      </fieldset>
+      <h2>NOVITA'</h2>
+      <h3>
+        Vuoi rimanere aggiornato su atre novità del blog? Iscriviti alla nostra
+        newsletter
+      </h3>
+      <label for="email"></label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="inserisci l'email"
+      />
+      <label for="button"></label>
+      <button type="submit">Iscriviti!</button>
     </form>
 
     <br />
 
     <aside>
-      <fieldset>
-        <legend>Area Correlati</legend>
-        <h3>Articoli correlati</h3>
-        <span>Validare il codice HTML</span><br />
-        <span>Categoria: develop</span><br />
-        <span>data: 18-9-2020</span><br />
-        <br />
-        <br />
-        <span>Correggere la sintassi</span><br />
-        <span>Categoria: develop</span><br />
-        <span>Data: 16-9-202</span><br />
-        <br />
-        <br />
+      <h2>ARTICOLI CORRELATI</h2>
+      <div class="articoli-corr">
+        <h2><a href="#">Validare il codice HTML</a></h2>
+        <span class="aside-label"
+          ><i class="fas fa-tag"></i> Categoria: develop</span
+        ><br />
+        <span id="span-data"
+          ><i class="fas fa-calendar-alt"></i> Data: 18-9-2020</span
+        >
+      </div>
 
-        <span>Categoria: ottimizzazione</span><br />
-        <span>Data: 30-9-2020</span><br />
-      </fieldset>
+      <div class="articoli-corr">
+        <h2><a href="#">Correggerre la sintassi</a></h2>
+        <span class="aside-label"
+          ><i class="fas fa-tag"></i> Categoria: develop</span
+        ><br />
+        <span id="span-data"
+          ><i class="fas fa-calendar-alt"></i> Data: 16-9-202</span
+        >
+      </div>
+
+      <div class="articoli-corr">
+        <h2><a href="#">Correggere la sintassi</a></h2>
+        <span class="aside-label"
+          ><i class="fas fa-tag"></i> Categoria: ottimizzazione</span
+        ><br />
+        <span id="span-data"
+          ><i class="fas fa-calendar-alt"></i> Data: 30-9-2020</span
+        >
+      </div>
     </aside>
 
     <footer>
@@ -173,7 +186,6 @@
         <p>
           Testata online di Mario Rossi, registrata con prot. n.213/2018 - via
           Luigi Einaudi 2 - Milano. P.IVA 00112233
-          <br />
           <a href="mailto:mariorossi@epicode.com">info@epicode.school</a>
         </p>
       </fieldset>

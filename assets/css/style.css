@@ -12,6 +12,7 @@ form,
 aside,
 footer {
   display: block;
+  padding: 20px;
 }
 body {
   font-family: "Poppins", sans-serif;
@@ -103,6 +104,10 @@ table th {
   font-size: 20px;
 }
 
+tfoot {
+  border-bottom: rgb(72, 72, 231);
+}
+
 th,
 td {
   border: solid white 1px;
@@ -121,14 +126,39 @@ table tbody tr:nth-of-type(4) {
   background-color: rgb(171 163 163 / 22%);
 }
 
+article {
+  padding-top: 20px;
+}
+
+article a {
+  color: #009fff;
+  font-weight: 600;
+}
+
 main > iframe {
   width: 100%;
   border-radius: 10px;
+  height: 280px;
 }
 
 form {
-  width: 100%;
-  background-color: white;
+  display: inline-block;
+
+  background-color: #9e9e9e96;
+  font-size: 25px;
+  padding-bottom: 10px;
+}
+
+form > h2 {
+  text-align: center;
+  font-weight: 700;
+  padding-block: 17px;
+}
+
+form > input,
+button {
+  display: inline-block;
+  margin-inline: auto;
 }
 
 aside {
@@ -136,7 +166,26 @@ aside {
   background-color: white;
 }
 
+aside > h2 {
+  font-weight: 700;
+  font-size: 25px;
+  text-align: center;
+  padding-bottom: 17px;
+}
+
+.articoli-corr {
+  background-color: #9e9e9e96;
+  margin-bottom: 10px;
+  height: 120px;
+  vertical-align: bottom;
+}
+
+#span-data {
+  display: inline-block;
+  text-align: right;
+}
+
 footer {
   width: 100%;
-  background-color: white;
+  background-color: rgb(37, 152, 150);
 }
