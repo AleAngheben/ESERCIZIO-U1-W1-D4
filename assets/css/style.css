@@ -1,15 +1,17 @@
 /* IMPOSTAZIONI GENERALI */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;700;900&display=swap");
 
 body {
+  width: 450px;
   font-family: "Poppins", sans-serif;
   display: block;
   padding: 20px;
   background-image: url("/assets/img/sfondo.png");
   font-size: 23px;
-  word-spacing: 5px;
-  letter-spacing: 1px;
+  word-spacing: 3.5px;
+  letter-spacing: 0.5px;
   line-height: 1.4;
+  background-color: white;
 }
 
 ul {
@@ -29,7 +31,10 @@ header {
   color: white;
   text-align: center;
   font-size: 18px;
-  padding-block: 2rem;
+  padding-block: 3rem;
+  width: 100%;
+  box-shadow: 0px 1px 8px 5px rgba(0, 0, 0, 0.5),
+    1px 1px 10px rgba(255, 255, 255, 0.5);
 }
 
 .head-list > a {
@@ -38,7 +43,7 @@ header {
 }
 
 body > header > h3 {
-  padding-block: 1rem;
+  padding-block: 2rem;
 }
 
 .logo-container {
@@ -51,15 +56,26 @@ body > header > h3 {
 }
 
 main {
-  width: 100%;
+  max-width: 100%;
   background-color: white;
   padding-top: 30px;
   display: block;
-  margin-top: 10px;
+  margin-top: 1.2rem;
+  padding: 15px;
+  box-shadow: 0px 1px 8px 5px rgba(0, 0, 0, 0.5),
+    1px 1px 10px rgba(255, 255, 255, 0.5);
 }
 
 main h1 {
-  font-size: 47px;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+main section .ele-box {
+  background-color: #c5c2c261;
+  border-radius: 10px;
+  border: solid 1px;
+  border-color: grey;
 }
 
 .head-content > h1 + p {
@@ -95,9 +111,16 @@ section > p > span {
 }
 
 table {
-  border-collapse: collapse;
   width: 100%;
+  table-layout: initial;
   text-align: center;
+  border-collapse: inherit;
+  border-bottom: solid 2px rgb(72, 72, 231);
+}
+
+table > caption {
+  font-style: oblique;
+  font-weight: 600;
 }
 
 table th {
@@ -105,6 +128,7 @@ table th {
   color: white;
   border: solid white 1px;
   font-size: 20px;
+  padding-block: 1rem;
 }
 
 tfoot {
@@ -115,6 +139,7 @@ th,
 td {
   border: solid white 1px;
   padding: 10px;
+  padding-block: 1rem;
 }
 
 table thead th:nth-of-type(1) {
@@ -138,28 +163,50 @@ article a {
   font-weight: 600;
 }
 
-main > iframe {
+main > .video-box > iframe {
   width: 100%;
-  border-radius: 10px;
+  border-radius: 20px;
+  height: 220px;
+  margin-top: 2rem;
 }
 
 form {
-  display: inline-block;
+  display: block;
   margin-inline: auto;
-  background-color: #9e9e9e96;
-  font-size: 25px;
+  width: 100%;
+  background-color: #e3dede;
+  font-size: 20px;
   padding-bottom: 10px;
+  margin-top: 1.5rem;
+  font-family: "Poppins", sans-serif;
 }
 
 form > h2 {
   text-align: center;
-  font-weight: 700;
+  font-weight: 600;
+  padding-block: 1.5rem;
+  font-size: 30px;
+}
+
+form > h3 {
+  padding-bottom: 1rem;
+  padding-inline: 1rem;
 }
 
 form > input,
 button {
   display: inline-block;
+  align-items: center;
+}
+
+.form-box {
+  background-color: white;
+}
+
+.newesletter > input button {
+  display: block;
   margin-inline: auto;
+  width: 100%;
 }
 
 aside {
@@ -174,17 +221,50 @@ aside > h2 {
   padding-bottom: 17px;
 }
 
-.articoli-corr {
-  background-color: #9e9e9e96;
-  height: 120px;
-  vertical-align: bottom;
+aside > div > h2 > a {
+  color: #01adc3;
+  font-weight: 600;
 }
 
-#span-data {
-  display: inline-block;
+.articoli-corr {
+  background-color: #e3dede;
+  height: 120px;
+  vertical-align: bottom;
+  border: solid 1px grey;
+  margin-block: 1rem;
+  padding-top: 1.3rem;
+  padding-left: 1rem;
+  font-size: 20px;
+}
+
+.articoli-corr > #span-data {
+  display: block;
   text-align: right;
+  padding-top: 1.3rem;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
 }
 
 footer {
-  background-color: rgb(37, 152, 150);
+  background: linear-gradient(52deg, #25838f, #174349);
+  color: white;
+  text-align: center;
+  padding-bottom: 1.2rem;
+  box-shadow: 0px 1px 8px 5px rgba(0, 0, 0, 0.5),
+    1px 1px 10px rgba(255, 255, 255, 0.5);
+}
+
+footer > h3 {
+  padding-block: 1rem;
+  margin-top: 2rem;
+}
+
+footer > p {
+  padding: 1rem;
+  font-size: 16px;
+}
+
+footer > p > a {
+  font-weight: 600;
+  color: #e237ff;
 }
