@@ -1,0 +1,142 @@
+/* IMPOSTAZIONI GENERALI */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap");
+
+html {
+  width: 100%;
+  margin-inline: auto;
+}
+
+header,
+main,
+form,
+aside,
+footer {
+  display: block;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  width: 500px;
+  background-image: url(/assets/img/sfondo.png);
+  background-size: cover;
+  margin-inline: auto;
+  font-size: 23px;
+  word-spacing: 5px;
+  letter-spacing: 1px;
+  line-height: 1.3;
+}
+
+ul {
+  padding-left: 50px;
+  list-style-type: disc;
+  padding-bottom: 20px;
+}
+ol {
+  list-style-type: decimal;
+  padding-left: 50px;
+  padding-bottom: 20px;
+}
+
+header {
+  width: 100%;
+
+  background-color: rgb(49, 49, 234);
+}
+
+.logo-container {
+  width: 80%;
+}
+
+main {
+  width: 100%;
+  background-color: white;
+  padding-top: 10px;
+  display: block;
+  margin-top: 10px;
+}
+
+main h1 {
+  font-size: 47px;
+}
+
+.head-content > h1 + p {
+  font-size: 25px;
+  padding-block: 20px;
+  color: grey;
+}
+
+.head-content > p > span {
+  font-weight: 700;
+  color: #b473bf;
+}
+
+main h3:nth-of-type(1) {
+  padding-bottom: 20px;
+}
+
+.head-content p:nth-of-type(2) {
+  padding-bottom: 20px;
+}
+
+section p:nth-of-type(1) {
+  padding-bottom: 20px;
+}
+
+section p:nth-of-type(2) {
+  padding-bottom: 20px;
+}
+
+section > p > span {
+  font-weight: 700;
+  color: #b473bf;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  text-align: center;
+}
+
+table th {
+  background-color: rgb(72, 72, 231);
+  color: white;
+  border: solid white 1px;
+  font-size: 20px;
+}
+
+th,
+td {
+  border: solid white 1px;
+  padding: 10px;
+}
+
+table thead th:nth-of-type(1) {
+  vertical-align: bottom;
+}
+
+table tbody tr:nth-of-type(2) {
+  background-color: rgb(171 163 163 / 22%);
+}
+
+table tbody tr:nth-of-type(4) {
+  background-color: rgb(171 163 163 / 22%);
+}
+
+main > iframe {
+  width: 100%;
+  border-radius: 10px;
+}
+
+form {
+  width: 100%;
+  background-color: white;
+}
+
+aside {
+  width: 100%;
+  background-color: white;
+}
+
+footer {
+  width: 100%;
+  background-color: white;
+}
